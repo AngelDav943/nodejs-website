@@ -6,14 +6,12 @@ const page = require('angeldav-testpackage');
 
 page.url = "http://localhost:3000"
 page.default.template = `${__dirname}/template.html`
-page.default.notfound = `${__dirname}/view/404.html`
-/*
+page.default.notfound = `${__dirname}/view/error.html`
+
 page.default.other = {
-	templateheader: fs.readFileSync(
-		`${__dirname}/public/components/navigator.html`
-	)
+	templateheader: `${__dirname}/public/components/navigator.html`
 };
-*/
+
 app.use('/public', express.static('public'));
 
 const pageloader = require(`angeldav-test-pageloader`)(page, {
