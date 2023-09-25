@@ -4,9 +4,11 @@ const app = express();
 const http = require('http').Server(app);
 const page = require('angeldav-testpackage');
 
-page.url = "http://localhost:3000"
-page.default.template = `${__dirname}/template.html`
+page.url = "http://localhost:80"
+page.default.template = `${__dirname}/templates/base.html`
 page.default.notfound = `${__dirname}/pages/error.html`
+
+page.default.preload = `${__dirname}/preload.js`
 
 page.default.other = {
 	templateheader: `${__dirname}/public/components/navigator.html`
@@ -19,6 +21,6 @@ const pageloader = require(`angeldav-test-pageloader`)(page, {
     "path": `${__dirname}/view`
 })
 
-http.listen(3000, () => {
+http.listen(80, () => {
 	console.log('server started');
 });
