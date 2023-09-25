@@ -43,6 +43,9 @@ nav a:hover {
     }
 
     nav.open {
+        /*background-color: #ffffff93;*/
+        overflow-y: auto;
+        overflow-x: hidden;
         position: fixed;
         top: 0;
         height: 100vh;

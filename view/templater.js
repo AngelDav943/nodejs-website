@@ -1,7 +1,7 @@
 var htmlcontent = ""
 
 var array = [
-    "first", "second", "third", "fourth", "fifth"
+    "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "nineth", "tenth"
 ]
 
 for (let i = 0; i < array.length; i++) {
@@ -9,7 +9,7 @@ for (let i = 0; i < array.length; i++) {
     htmlcontent += new page.templater({
         "content": `${__dirname}/../../public/components/test.html`,
         "other": {
-            "name": i,
+            "name": i+1,
             "description": element,
         }
     }).load()
