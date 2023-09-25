@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="__rooturl/public/styles/nav.css">
-<nav>
-    <p class="logo">LOGO</p>
+<nav class="nav">
+    <p onclick="if (window.getComputedStyle(this).cursor == 'pointer') this.parentElement.classList.toggle('open')" class="logo">LOGO</p>
     <a href="__rooturl">Home</a>
+    <a href="__rooturl/test">Test</a>
     <a href="__rooturl/codetest">Code test</a>
 </nav>

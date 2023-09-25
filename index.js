@@ -6,7 +6,7 @@ const page = require('angeldav-testpackage');
 
 page.url = "http://localhost:3000"
 page.default.template = `${__dirname}/template.html`
-page.default.notfound = `${__dirname}/view/error.html`
+page.default.notfound = `${__dirname}/pages/error.html`
 
 page.default.other = {
 	templateheader: `${__dirname}/public/components/navigator.html`

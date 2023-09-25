@@ -1,15 +1,18 @@
 nav {
-    max-width: 600px;
     width: 100%;
     margin: auto;
     background-color: gainsboro;
     display: flex;
     align-items: center;
     height: 3em;
+    margin: 0 -1em;
+    padding: 0 1em;
+    margin-bottom: 1em;
 }
 
 nav .logo {
     font-weight: bolder;
+    padding: 1em;
 }
 
 nav a {
@@ -24,4 +27,29 @@ nav a:hover {
     padding: 1em;
     color: white;
     background-color: #00000065;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        overflow: hidden;
+        gap: 1em;
+    }
+
+    nav .logo {
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    nav.open {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: calc(100vw - 2em);
+    }
+
+    nav.open a {
+        width: 100%;
+    }
 }
