@@ -1,7 +1,7 @@
 var htmlcontent = ""
 
 var array = [
-    "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "nineth", "tenth"
+    "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "ninth", "tenth"
 ]
 
 for (let i = 0; i < array.length; i++) {
