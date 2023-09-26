@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angeldav-loaderhtml": "^1.2.9",
     "angeldav-test-pageloader": "^1.0.10",
-    "angeldav-testpackage": "^1.2.9",
     "express": "^4.18.2"
   }
 }

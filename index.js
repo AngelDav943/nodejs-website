@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const http = require('http').Server(app);
-const page = require('angeldav-testpackage');
+const page = require('angeldav-loaderhtml');
 
 page.url = "http://localhost:80"
 page.default.template = `${__dirname}/templates/base.html`
