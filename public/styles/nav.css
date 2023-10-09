@@ -2,12 +2,25 @@ nav {
     width: 100%;
     margin: auto;
     background-color: gainsboro;
-    display: flex;
-    align-items: center;
     height: 3em;
     margin: 0 -1em;
     padding: 0 1em;
     margin-bottom: 1em;
+    
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
 }
 
 nav .logo {
@@ -32,7 +45,10 @@ nav a:hover {
 @media screen and (max-width: 500px) {
     nav {
         flex-direction: column;
-        overflow: hidden;
+    }
+
+    nav .left{
+        flex-direction: column;
         gap: 1em;
     }
 
@@ -52,7 +68,7 @@ nav a:hover {
         width: calc(100vw - 2em);
     }
 
-    nav.open a {
+    nav.open * {
         width: 100%;
     }
 }

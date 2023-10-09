@@ -21,6 +21,7 @@ const pageloader = require(`angeldav-test-pageloader`)(page, {
     "path": `${__dirname}/view`
 })
 
-http.listen(80, () => {
-	console.log('server started');
+const port = 80
+http.listen(port, () => {
+	console.log(`server started, port: ${port}`);
 });
